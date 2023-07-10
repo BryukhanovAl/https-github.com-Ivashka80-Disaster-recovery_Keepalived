@@ -54,6 +54,8 @@
 
 ![Снимок03](https://github.com/Ivashka80/Disaster-recovery_Keepalived/assets/121082757/e74903aa-bde0-48af-90ab-04ecc1e0bc5a)
 
+Файл PKT https://github.com/Ivashka80/Disaster-recovery_Keepalived/blob/main/hsrp_advanced_DZ1.pkt
+
 </details>
 
 ------
