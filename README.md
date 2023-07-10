@@ -74,26 +74,15 @@
 
 ```
 #!/bin/bash
-if [[ $(netstat -tuln | grep LISTEN | grep :80) ]] && [[ -f /var/www/html/index.nginx-debian.html ]]; then
+if [[ $(netstat -tuln | grep LISTEN | grep :80) ]] && [[ -f /var/www/html/index.nginx->
         exit 0
 else
-        exit 1
+#       exit 1
+        systemctl stop keepalived
 fi
 ```
 
 Файл конфига https://github.com/Ivashka80/Disaster-recovery_Keepalived/blob/main/keepalived.conf
-
-</details>
-
-### *Вопрос по заданию №2*
-
-Я не могу понять принцип работы скрипта. Когда я его просто тестирую (например, удаляю файл `/var/www/html/index.nginx-debian.html`, то мне выводятся правильные результаты. 
-
-Я прописал этот скрипт в файле конфига (https://github.com/Ivashka80/Disaster-recovery_Keepalived/blob/main/keepalived.conf). И когда на сервере MASTER я "удаляю" файл `/var/www/html/index.nginx-debian.html`, мне выводится ошибка 403. Как понимаю, в такой ситуации должен произойти переход на сервер BACKUP, но почему он не происходит?
-
-Если делать обычное отслеживание самого процесса, как в лекции, то переход происходит нормально (см. скриншоты ниже).
-
-<details>
 
 ![image](https://github.com/Ivashka80/Disaster-recovery_Keepalived/assets/121082757/00ae070e-d9bd-42dc-8b89-d58e8a740acd)
 
