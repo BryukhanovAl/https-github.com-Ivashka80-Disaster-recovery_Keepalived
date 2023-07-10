@@ -81,7 +81,23 @@ else
 fi
 ```
 
+Файл конфига https://github.com/Ivashka80/Disaster-recovery_Keepalived/blob/main/keepalived.conf
+
 </details>
+
+### *Вопрос по заданию №2*
+
+Я не могу понять принцип работы скрипта. Когда я его просто тестирую (например, удаляю файл `/var/www/html/index.nginx-debian.html`, то мне выводятся правильные результаты. 
+
+Я прописал этот скрипт в файле конфига (https://github.com/Ivashka80/Disaster-recovery_Keepalived/blob/main/keepalived.conf). И когда на сервере MASTER я "удаляю" файл `/var/www/html/index.nginx-debian.html`, мне выводится ошибка 403. Как понимаю, в такой ситуации должен произойти переход на сервер BACKUP, но почему он не происходит?
+
+Если делать обычное отслеживание самого процесса, то переход происходит нормально (см. скриншоты ниже).
+
+<details>
+
+![image](https://github.com/Ivashka80/Disaster-recovery_Keepalived/assets/121082757/00ae070e-d9bd-42dc-8b89-d58e8a740acd)
+
+![image](https://github.com/Ivashka80/Disaster-recovery_Keepalived/assets/121082757/412ec3b6-0324-48b7-82b6-3155ef1051dc)
 
 ------
 
