@@ -82,16 +82,16 @@ fi
 
 Файл конфига https://github.com/Ivashka80/Disaster-recovery_Keepalived/blob/main/keepalived.conf
 
-![image](https://github.com/Ivashka80/Disaster-recovery_Keepalived/assets/121082757/00ae070e-d9bd-42dc-8b89-d58e8a740acd)
+![image](https://github.com/Ivashka80/Disaster-recovery_Keepalived/assets/121082757/fbf9888d-5acc-4217-95af-2b33df123c20)
 
-![image](https://github.com/Ivashka80/Disaster-recovery_Keepalived/assets/121082757/412ec3b6-0324-48b7-82b6-3155ef1051dc)
+![image](https://github.com/Ivashka80/Disaster-recovery_Keepalived/assets/121082757/33d85673-d882-434f-9da8-49d8612cbf84)
+
+![image](https://github.com/Ivashka80/Disaster-recovery_Keepalived/assets/121082757/cdcf9435-0a52-4e49-9686-51a9070ef5fe)
+
+![image](https://github.com/Ivashka80/Disaster-recovery_Keepalived/assets/121082757/bcfaa39d-3104-4576-b8bc-df45b850793d)
 
 </details>
 
-
-### *Вопрос к заданию №2*
-
-Не совсем разобрался как работает keepalived. Я написал скрипт, при обычном его исполнении всё работает. Но в файле конфига keepalived мне пришлось прописать пользователя root, чтобы при "удалении" файла `/var/www/html/index.nginx-debian.html` скрипт срабатывал и сервер переключался на BACKUP. Иначе же просто остается на MASTER и браузер выдает ошибку 403. Как понимаю, это из-за того, что я все действия выполнял из-под root? Или я где-то недопонял задание?
 
 ------
 
